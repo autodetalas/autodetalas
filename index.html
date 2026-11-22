@@ -20,23 +20,21 @@
   box-sizing: border-box;
 }
 
-html {
+html, body {
+  margin: 0;
   width: 100%;
   overflow-x: hidden;
 }
 
 body {
-  margin: 0;
-  width: 100%;
   font-family: Arial, Helvetica, sans-serif;
   background: #f5f6f8;
   color: #252a31;
-  overflow-x: hidden;
 }
 
 header {
   background: #ffffff;
-  padding: 16px 24px;
+  padding: 16px 25px;
   border-bottom: 1px solid #e5e7eb;
   width: 100%;
 }
@@ -57,32 +55,14 @@ header {
 .brand {
   display: flex;
   align-items: center;
-  gap: 12px;
 }
 
 .brand-image {
-  width: 85px;
-  height: 65px;
+  width: 220px;
+  height: 130px;
   object-fit: contain;
-  border-radius: 8px;
-}
-
-.logo {
-  font-size: 27px;
-  font-weight: 800;
-  letter-spacing: .3px;
-}
-
-.logo .auto {
-  color: #239447;
-}
-
-.logo .trials {
-  color: #171b22;
-}
-
-.logo .dot {
-  color: #239447;
+  display: block;
+  border-radius: 10px;
 }
 
 .lang-switch {
@@ -94,7 +74,7 @@ header {
   border: 1px solid #c8cdd4;
   background: #ffffff;
   color: #252a31;
-  padding: 8px 12px;
+  padding: 9px 13px;
   border-radius: 6px;
   cursor: pointer;
   font-weight: 700;
@@ -167,7 +147,6 @@ h2 {
   text-decoration: underline;
 }
 
-/* Google Maps */
 .map {
   overflow: hidden;
   border-radius: 12px;
@@ -182,7 +161,6 @@ h2 {
   border: 0;
 }
 
-/* Map link */
 .map-link {
   display: inline-block;
   margin-top: 12px;
@@ -191,7 +169,6 @@ h2 {
   text-decoration: none;
 }
 
-/* Photo under map */
 .photo {
   margin-top: 22px;
   overflow: hidden;
@@ -206,7 +183,6 @@ h2 {
   object-fit: contain;
 }
 
-/* Footer */
 footer {
   text-align: center;
   padding: 25px 15px;
@@ -214,7 +190,7 @@ footer {
   font-size: 13px;
 }
 
-/* Tablets */
+/* Планшеты */
 @media (max-width: 900px) {
   .wrap {
     max-width: 100%;
@@ -228,33 +204,25 @@ footer {
     padding: 30px;
   }
 
-  .details {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .brand-image {
+    width: 170px;
+    height: 110px;
   }
 }
 
-/* Phones */
+/* Телефоны */
 @media (max-width: 600px) {
   header {
-    padding: 12px;
+    padding: 10px 12px;
   }
 
   .head-inner {
     gap: 8px;
   }
 
-  .brand {
-    gap: 7px;
-    min-width: 0;
-  }
-
   .brand-image {
-    width: 55px;
-    height: 48px;
-  }
-
-  .logo {
-    font-size: 19px;
+    width: 125px;
+    height: 90px;
   }
 
   .lang-switch {
@@ -262,7 +230,7 @@ footer {
   }
 
   .lang {
-    padding: 6px 7px;
+    padding: 7px 8px;
     font-size: 11px;
   }
 
@@ -312,19 +280,15 @@ footer {
   }
 }
 
-/* Very small phones */
+/* Маленькие телефоны */
 @media (max-width: 360px) {
   .brand-image {
-    width: 43px;
-    height: 40px;
-  }
-
-  .logo {
-    font-size: 17px;
+    width: 105px;
+    height: 75px;
   }
 
   .lang {
-    padding: 5px;
+    padding: 6px;
     font-size: 10px;
   }
 
@@ -366,10 +330,6 @@ footer {
         src="Screenshot_20261122_213952_Facebook.jpg"
         alt="AutoTriāls"
         class="brand-image">
-
-      <div class="logo">
-        <span class="auto">Auto</span><span class="trials">Triāls</span><span class="dot">.</span>
-      </div>
     </div>
 
     <div class="lang-switch" aria-label="Language">
@@ -412,7 +372,7 @@ footer {
         data-ru="Ищете магазин автозапчастей в Даугавпилсе? AutoTriāls находится по адресу Muitas iela 3E. Обратитесь к нам, чтобы уточнить наличие нужных автомобильных запчастей и получить помощь с подбором деталей."
         data-lv="Meklējat auto rezerves daļu veikalu Daugavpilī? AutoTriāls atrodas Muitas ielā 3E. Sazinieties ar mums, lai noskaidrotu nepieciešamo auto detaļu pieejamību un saņemtu palīdzību to izvēlē."
         data-en="Looking for an auto parts shop in Daugavpils? AutoTriāls is located at Muitas iela 3E. Contact us to ask about the availability of car parts and get help choosing the right items.">
-        Ищете магазин автозапчастей в Даугавпилсе? AutoTriāls находится по адресу Muitas iela 3E. Обратитесь к нам, чтобы уточнить наличие нужных автомобильных запчастей и получить помощь с подбором деталей.
+        Ищете магазин автозапчастей в Даугавпилсе? AutoTriāл находится по адресу Muitas iela 3E. Обратитесь к нам, чтобы уточнить наличие нужных автомобильных запчастей и получить помощь с подбором деталей.
       </p>
 
     </div>
