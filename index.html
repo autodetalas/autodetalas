@@ -131,61 +131,52 @@ p {
     transform: translateY(-2px);
 }
 
-/* OPENING HOURS */
+<!-- OPENING HOURS -->
 
-.opening-hours {
-    margin-top: 30px;
-    padding: 25px;
-    background: white;
-    border: 1px solid #e5e7eb;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.04);
-}
+<div class="opening-hours">
 
-.opening-hours h2 {
-    margin-top: 0;
-    margin-bottom: 20px;
-}
+    <h2 data-ru="🕒 Время работы"
+        data-lv="🕒 Darba laiks"
+        data-en="🕒 Opening hours">
+        🕒 Время работы
+    </h2>
 
-.hours-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 15px;
-    padding: 16px 0;
-    border-bottom: 1px solid #e5e7eb;
-}
+    <div class="hours-row">
+        <span class="hours-day" data-ru="Понедельник" data-lv="Pirmdiena" data-en="Monday">Понедельник</span>
+        <span class="hours-time">09:00 – 17:00</span>
+    </div>
 
-.hours-row:last-child {
-    border-bottom: none;
-}
+    <div class="hours-row">
+        <span class="hours-day" data-ru="Вторник" data-lv="Otrdiena" data-en="Tuesday">Вторник</span>
+        <span class="hours-time">09:00 – 17:00</span>
+    </div>
 
-.hours-day {
-    font-weight: bold;
-}
+    <div class="hours-row">
+        <span class="hours-day" data-ru="Среда" data-lv="Trešdiena" data-en="Wednesday">Среда</span>
+        <span class="hours-time">09:00 – 17:00</span>
+    </div>
 
-.hours-time {
-    color: #333;
-    font-weight: bold;
-}
+    <div class="hours-row">
+        <span class="hours-day" data-ru="Четверг" data-lv="Ceturtdiena" data-en="Thursday">Четверг</span>
+        <span class="hours-time">09:00 – 17:00</span>
+    </div>
 
-.closed {
-    color: #777;
-}
+    <div class="hours-row">
+        <span class="hours-day" data-ru="Пятница" data-lv="Piektdiena" data-en="Friday">Пятница</span>
+        <span class="hours-time">09:00 – 17:00</span>
+    </div>
 
-/* MAP */
+    <div class="hours-row">
+        <span class="hours-day" data-ru="Суббота" data-lv="Sestdiena" data-en="Saturday">Суббота</span>
+        <span class="hours-time closed" data-ru="Закрыто" data-lv="Slēgts" data-en="Closed">Закрыто</span>
+    </div>
 
-.map {
-    margin-top: 25px;
-    border-radius: 15px;
-    overflow: hidden;
-}
+    <div class="hours-row">
+        <span class="hours-day" data-ru="Воскресенье" data-lv="Svētdiena" data-en="Sunday">Воскресенье</span>
+        <span class="hours-time closed" data-ru="Закрыто" data-lv="Slēgts" data-en="Closed">Закрыто</span>
+    </div>
 
-.map iframe {
-    width: 100%;
-    height: 400px;
-    border: 0;
-}
+</div>
 
 /* PHOTO */
 
